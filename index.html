@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <title>Gym Website</title>
+</head>
+<body>
+    <div id="menu">
+        <div class="menu__icons">
+            <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <i class="fa-brands fa-vk"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+        </div>
+    </div>
+    <header class=header>
+        <div class="wrapper">
+        <div class="header__inner">
+            <div class="header__label">THE POWER ROOM</div>
+            <div class="header_menu">
+                <div class="bars"><i class="fa-solid fa-bars"
+                    onclick="showMenu()"></i></div>
+                <div class="social_media_icons">
+                    <i class="fa-brands fa-vk"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="banner__inner">
+                <h1 class="banner__header">Feel The <span class="banner__power__word">Power</span></h1>
+                <p class="banner__paragraph">Welcome to The Power Room. 
+                    We are a fitness and training center that focuses on 
+                    pushing you to your absolute limit. 
+                    Download our complete brochure to get started today!
+                </p>
+                <a class="banner__download__button">Download Brochure</a>
+            </div>
+        </div>
+    </div>  
+    <div class="about">
+        <div class="wrapper">
+            <div class="about__inner">
+                <div class="about__image"><img src="images/качок2.jpg"></div>
+                <div class="about__list">
+                    <h4 class="supheader">About our gym</h6>
+                        <h1 class="about__header">SAFE BODY BUILDING</h1>
+                        <p>The extension comes with three pre-built pages to 
+                            help you get started faster. 
+                            You can change the text and images 
+                            and you're good to go.</p>
+                        <ul>
+                            <li>
+                                <span>The latest & greatest gym equipment</span>
+                            </li>
+                            <li>
+                                <span>5-inch, quality foam floor padding</span>
+                            </li>
+                            <li>
+                                <span>3 professional trainers</span>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trainers">
+            <div class="trainers__inner">
+                <div class="trainers__header">
+                <h1>
+                    MEET OUR TRAINERS
+                </h1>
+                <p>
+                    Our trainers are are here to dedicate the time and effort 
+                    that you need to get in the best shape of your life
+                </p>
+                </div>
+                <div class="trainers__cards">
+                    <div class="trainers__card">
+                        <div class="trainer__image">
+                            <img src="images/тренер1.jpg">
+                        </div>
+                        <div class="trainer__text">
+                            <h3>Mr Rogers</h3>
+                            <p>NEIGHBORHOOD WATCHMAN</p>
+                        </div>
+                    </div>
+                    <div class="trainers__card">
+                        <div class="trainer__image">
+                            <img src="images/тренер2.jpg">
+                        </div>
+                        <div class="trainer__text">
+                            <h3>Strawberry Shortcake</h3>
+                            <p>CUPCAKE SMASHER</p>
+                        </div>
+                    </div>
+                    <div class="trainers__card">
+                        <div class="trainer__image">
+                            <img src="images/тренер3.jpg">
+                        </div>
+                        <div class="trainer__text">
+                            <h3>Ronald McDonald</h3>
+                            <p>DOUBLE WHOOPASS WITH CHEESE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="contact">
+        <div class="wrapper">
+            <div class="contact__inner">
+                <div class="contact__text">
+                    <h1>CONTACT US</h1>
+                    <p>
+                        Contact us to ask any questions, 
+                        aquire a membership, talk to 
+                        our trainers or anything else
+                    </p>
+                </div>
+                <div class="contact__form">
+                    <h2>Want to work with us?</h2>
+                    <p>Complete this form and we will get back to you in 24 hours.</p>
+                    <form>
+                        <label for="inputName">Full Name</label>
+                        <input type="text" id="inputName" name="inputName">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" id="inputEmail" name="inputEmail">
+                        <label for="inputMessage">Message</label>
+                        <input type="text" id="inputMessage" name="inputMessage">
+                        <div><button type="submit" class="contact__button">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__transition"></div>
+    <div class="footer">
+        
+        <div class="wrapper">
+            <div class="footer__inner">
+                <h1>Follow us on social media</h1>
+                <p>Find us on any of these platforms, we respond 1-2 business days.</p>
+                <div class="footer__social_media">
+                    <a><i class="fa-brands fa-vk"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="footer__hr"></div>
+                <h4 class="copyright">Copyright © The Power Room</h6>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a963790d1f.js" crossorigin="anonymous"></script>
+    <script>
+        
+        const menu = document.getElementById('menu')
+
+        function showMenu() {
+            menu.style.top = '0'
+        }
+
+        function hideMenu() {
+            menu.style.top = '-60vh'
+        }
+        
+    </script>       
+</body>
+</html>
